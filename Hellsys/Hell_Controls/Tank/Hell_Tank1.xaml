@@ -1,0 +1,129 @@
+﻿<UserControl x:Class="Hellsys.Hell_Controls.Tank.Hell_Tank1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hellsys.Hell_Controls.Tank"
+             xmlns:process="clr-namespace:Hellsys.Hell_Controls.Process"
+             mc:Ignorable="d" >
+    <Viewbox>
+        <Canvas Height="670" Width="400">
+            <!--Foot Left-->
+            <Rectangle x:Name="RectangleFoot1" Width="30" Height="110" Canvas.Left="90" Canvas.Top="500" StrokeThickness="0.5" Stroke="Black" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="60"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,0" SpreadMethod="Reflect">
+                        <GradientStop Color="Gray" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <!--Foot Right-->
+            <Rectangle x:Name="RectangleFoot2" Width="30" Height="100" Canvas.Left="275" Canvas.Top="500" StrokeThickness="0.5" Stroke="Black" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-60"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,0" SpreadMethod="Reflect">
+                        <GradientStop Color="Gray" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <!--Leg Left-->
+            <Rectangle x:Name="RectangleLeft" Width="50" Height="125" Canvas.Left="40" Canvas.Top="515" StrokeThickness="2" Stroke="Black">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,0" SpreadMethod="Reflect">
+                        <GradientStop Color="Gray" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <!--Leg Right-->
+            <Rectangle x:Name="RectangleRight" Width="50" Height="125" Canvas.Left="315" Canvas.Top="515" StrokeThickness="2" Stroke="Black">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,0" SpreadMethod="Reflect">
+                        <GradientStop Color="Gray" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <!--FootSide Left-->
+            <Rectangle x:Name="FootSideLeft" Width="100" Height="40" Canvas.Left="15" Canvas.Top="625" StrokeThickness="2" Stroke="Black">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,0" SpreadMethod="Reflect">
+                        <GradientStop Color="Gray" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <!--FootSide Right-->
+            <Rectangle x:Name="FootSideRight" Width="100" Height="40" Canvas.Left="290" Canvas.Top="625" StrokeThickness="2" Stroke="Black">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,0" SpreadMethod="Reflect">
+                        <GradientStop Color="Gray" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <!--Body-->
+            <Path x:Name="PathBody1" Width="400" Height="550" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" StrokeThickness="2" Stroke="Black"
+                  Data="M 75.1858,98.5605L 75.1858,13.992L 73.477,9.81812L 69.7272,6.73513L 65.4078,4.60075L 61.5156,3.17784L 57.1013,2.03951L 52.2598,1.0909L 47.086,0.426884L 41.5325,0.0948677L 39.6339,3.8147e-006L 37.7353,3.8147e-006L 31.9919,0.142292L 26.4859,0.616596L 21.3596,1.37549L 16.613,2.37152L 12.3411,3.65214L 8.5913,5.07505L 4.55671,7.3043L 1.18664,10.4821L 0.0474663,13.2805L 0,13.992L 0,98.5605L 1.70877,102.687L 5.45856,105.817L 9.77795,107.952L 13.7176,109.327L 18.1319,110.513L 23.0209,111.462L 28.2896,112.126L 33.8905,112.458L 35.7892,112.552L 37.7353,112.552L 43.4312,112.41L 48.8423,111.936L 53.9211,111.177L 58.6202,110.134L 62.8921,108.9L 66.5944,107.43L 70.629,105.201L 73.9991,102.023L 75.1383,99.272L 75.1858,98.5605 Z ">
+                <Path.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,0" SpreadMethod="Reflect">
+                        <GradientStop Color="Gray" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+            <!--Head-->
+            <Rectangle x:Name="PathBody2" Width="400" Height="20" Canvas.Left="0" Canvas.Top="75" Stretch="Fill" StrokeThickness="2" Stroke="Black" StrokeMiterLimit="2.75">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,0" SpreadMethod="Reflect">
+                        <GradientStop Color="Gray" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <!--Process-->
+            <process:Hell_ProcessLevel x:Name="Tank_Level" Canvas.Left="125" Canvas.Top="95" Width="150" Height="370" ProcessColor="White" Maximum="100" BorderThickness="2" Value="75" />
+            <!--Belt-->
+            <Rectangle x:Name="PathBody2_Copy" Width="400" Height="20" Canvas.Left="0" Canvas.Top="465" Stretch="Fill" StrokeThickness="2" Stroke="Black" StrokeMiterLimit="2.75">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,0" SpreadMethod="Reflect">
+                        <GradientStop Color="Gray" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <StackPanel Canvas.Left="26" Canvas.Top="160" Orientation="Horizontal">
+                <TextBlock  Text="75%" FontWeight="Bold" FontSize="40" Foreground="Black"/>
+                <Line Margin="1 0 0 0" X1="17" Y1="26" X2="0" Y2="26"  Stroke="Black" StrokeThickness="3"/>
+                <Line  Margin="1 0 0 0" X1="148" Y1="26" X2="0" Y2="26"  Stroke="Red" StrokeThickness="3" StrokeDashArray="5,3"/>
+            </StackPanel>
+            <StackPanel Canvas.Left="26" Canvas.Top="252" Orientation="Horizontal">
+                <TextBlock  Text="50%" FontWeight="Bold" FontSize="40" Foreground="Black"/>
+                <Line Margin="1 0 0 0" X1="17" Y1="26" X2="0" Y2="26"  Stroke="Black" StrokeThickness="3"/>
+                <Line Margin="1 0 0 0" X1="148" Y1="26" X2="0" Y2="26"  Stroke="Red" StrokeThickness="3" StrokeDashArray="5,3"/>
+            </StackPanel>
+            <StackPanel Canvas.Left="26" Canvas.Top="345" Orientation="Horizontal">
+                <TextBlock  Text="25%" FontWeight="Bold" FontSize="40" Foreground="Black"/>
+                <Line Margin="1 0 0 0" X1="17" Y1="26" X2="0" Y2="26"  Stroke="Black" StrokeThickness="3"/>
+                <Line  Margin="1 0 0 0" X1="148" Y1="26" X2="0" Y2="26"  Stroke="Red" StrokeThickness="3" StrokeDashArray="5,3"/>
+            </StackPanel>
+            <TextBlock Text="11" TextAlignment="Center" FontSize="55" FontWeight="Bold"  Canvas.Left="168" Canvas.Top="1"  Foreground="Red"/>
+        </Canvas>
+    </Viewbox>
+</UserControl>

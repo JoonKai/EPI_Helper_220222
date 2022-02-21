@@ -1,0 +1,14 @@
+﻿<Application x:Class="EPI_Helper.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:EPI_Helper"
+             StartupUri="EPI_View/Hellsys.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Themes/Styles/Generic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <SolidColorBrush x:Key="AccentColorBrush" Color="#FF306F7D" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
