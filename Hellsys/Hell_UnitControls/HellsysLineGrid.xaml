@@ -30,23 +30,23 @@
     </UserControl.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="150" MaxWidth="150"/>
-            <ColumnDefinition Width="2"/>
+            <ColumnDefinition Width="200" MaxWidth="200"/>
+            <ColumnDefinition Width="5"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Border Grid.Column="0" Background="White">
-            <Grid>
+        <Border Grid.Column="0">
+            <line:CustomGrid ShowCustomGridLines="True" Margin="1" GridLineBrush="Black" GridLineThickness="1" Background="AliceBlue">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="100"/>
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
-                <ListBox Grid.Row="1">
+                <ListBox x:Name="lbxExcelFIleList" Grid.Row="1" Background="Transparent">
                 </ListBox>
                 <ListBox Grid.Row="2"/>
-            </Grid>
+            </line:CustomGrid>
         </Border>
-        <GridSplitter Grid.Column="1" Background="#FF2F7E42" HorizontalAlignment="Stretch"/>
+        <GridSplitter Grid.Column="1" Background="gray" BorderThickness="1" BorderBrush="White" HorizontalAlignment="Stretch" />
         <ScrollViewer Grid.Column="2" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
             <StackPanel Orientation="Vertical">
                 <line:CustomGrid Margin="1" ShowCustomGridLines="True" GridLineBrush="Black" GridLineThickness="1">

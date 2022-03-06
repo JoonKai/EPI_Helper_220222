@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPI_Helper", "EPI_Helper\EP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hellsys", "Hellsys\Hellsys.csproj", "{99D79FAA-D132-4EBF-8F8F-1369650DD4C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HellsysLib", "HellsysLib\HellsysLib.csproj", "{7C8813D6-A7F6-49DB-830F-7C4B6BF2F4EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{99D79FAA-D132-4EBF-8F8F-1369650DD4C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99D79FAA-D132-4EBF-8F8F-1369650DD4C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99D79FAA-D132-4EBF-8F8F-1369650DD4C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C8813D6-A7F6-49DB-830F-7C4B6BF2F4EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C8813D6-A7F6-49DB-830F-7C4B6BF2F4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C8813D6-A7F6-49DB-830F-7C4B6BF2F4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C8813D6-A7F6-49DB-830F-7C4B6BF2F4EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
