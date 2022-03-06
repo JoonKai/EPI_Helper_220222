@@ -84,7 +84,12 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\HellsysLib\HellsysLib.csproj">
+      <Project>{7C8813D6-A7F6-49DB-830F-7C4B6BF2F4EA}</Project>
+      <Name>HellsysLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Page Include="Hell_Controls\Process\Hell_ProcessLevel.xaml">
       <SubType>Designer</SubType>

@@ -35,15 +35,27 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Border Grid.Column="0">
-            <line:CustomGrid ShowCustomGridLines="True" Margin="1" GridLineBrush="Black" GridLineThickness="1" Background="AliceBlue">
+            <line:CustomGrid Background="White" ShowCustomGridLines="True" Margin="1" GridLineBrush="Black" GridLineThickness="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="200"/>
                     <RowDefinition Height="100"/>
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
-                <ListBox x:Name="lbxExcelFIleList" Grid.Row="1" Background="Transparent">
+                <GroupBox Header="업무일지" Grid.Row="0" Margin="0.5" FontSize="10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0">
+                            <Button x:Name="btnLoadWorkLog" Click="btnLoadWorkLog_Click" Content="업무일지 불러오기"/>
+                        </StackPanel>
+                    </Grid>
+                </GroupBox>
+                <ListBox x:Name="lbxExcelFIleList" Grid.Row="1" Margin="1.5" Background="Transparent">
                 </ListBox>
-                <ListBox Grid.Row="2"/>
+                <ListBox Grid.Row="2" Margin="1.5" Background="Transparent"/>
             </line:CustomGrid>
         </Border>
         <GridSplitter Grid.Column="1" Background="gray" BorderThickness="1" BorderBrush="White" HorizontalAlignment="Stretch" />
