@@ -24,5 +24,18 @@ namespace EPI_Helper.EPI_View.Page
         {
             InitializeComponent();
         }
+
+        private void btnGo_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (WebView != null && WebView.CoreWebView2 != null)
+                {
+                    WebView.CoreWebView2.Navigate(tbAdress.Text);
+                }
+
+            }
+            catch { }
+        }
     }
 }
